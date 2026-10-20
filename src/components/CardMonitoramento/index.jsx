@@ -1,4 +1,4 @@
-import {useState} from 'react';
+﻿import {useState} from 'react';
 import './style.css';
 
 export default function CardMonitoramento() {
@@ -84,6 +84,7 @@ export default function CardMonitoramento() {
                     id="passo-input"
                     onChange={validarIncremento}
                     aria-describedby="ajuda-passo"
+                    onFocus={(event) => event.target.select()}
                 />
             </div>
             <p className="ajuda-passo" id="ajuda-passo">Informe um número inteiro de 1 a 10.</p>
